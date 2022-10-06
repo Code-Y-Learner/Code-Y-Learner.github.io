@@ -21,7 +21,7 @@ tags: blog flask
 
 ![blog_image](/assets/images/2022-10-05-firstpost/heroku_blog.PNG "blog_image_file")
 
-나의 ![헤로쿠사이트](https://codeylearnerblog.herokuapp.com/)는 여기서 확인할 수 있다.
+나의 헤로쿠사이트는 <https://codeylearnerblog.herokuapp.com>는 여기서 확인할 수 있다.
 
 헤로쿠를 결과적으로 이용하지 않는 가장 큰 이유는 헤로쿠의 서버였다. 서버가 미국에 있고 일정시간 신호가 없으면 서버가 다운되는데 이걸 복구할때 서버가 없다고 표시된다.
 
