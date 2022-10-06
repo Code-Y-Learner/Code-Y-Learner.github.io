@@ -1,9 +1,9 @@
 ---
 layout: post
 title: 블로그개시
-subtitle: test
+subtitle: 첫번째 게시글
 categories: blog
-tags: [flask], [blog]
+tags: [blog]
 ---
 
 ### 블로그 개시
