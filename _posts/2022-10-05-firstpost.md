@@ -32,3 +32,4 @@ tags: blog flask
 
 헤로쿠 사이트 개설과 flask를 통해 RESTFUL블로그를 만든 과정이 필요하다면 복습 차원에서 따로 다루기로 하겠다. 일단 내 깃허브에 해당 코드도 있고 헤로쿠를 이용할 시 생기는 여러가지 버그들을 해결하는 방법 또한 기록할 필요도 있기 때문이다.
 
+![image](/assets/images/banners/home.jpeg)
