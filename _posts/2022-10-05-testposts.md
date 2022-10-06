@@ -8,4 +8,4 @@ tags: [gif]
 
 일전에 만들어 놓은 매크로
 
-![송어인macro.gif](D:\IT\web\blog\Code-Y-Learner.github.io\assets\images\2022-10-05-testposts\송어인macro.gif)
+![송어인macro.gif](https://github.com/Code-Y-Learner/Code-Y-Learner.github.io/tree/master/assets/images/2022-10-05-testposts/송어인macro.gif "송어인macro_gif_file")
