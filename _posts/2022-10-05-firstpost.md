@@ -2,7 +2,7 @@
 layout: post
 title: 블로그개시
 subtitle: test
-categories: Blog
+categories: blog
 tags: [flask], [blog]
 ---
 
@@ -19,7 +19,7 @@ tags: [flask], [blog]
 
 
 
-![blog_image](/assets/images/2022-10-05-블로그개시/heroku_blog.PNG "blog_image_file")
+![blog_image](/assets/images/2022-10-05-firstpost/heroku_blog.PNG "blog_image_file")
 
 나의 ![헤로쿠사이트]("https://codeylearnerblog.herokuapp.com/")는 여기서 확인할 수 있다.
 
