@@ -7,7 +7,7 @@ tags: blog flask
 ---
 
 ### 블로그 개시
-![birthday_image](https://giphy.com/embed/bnhAsd06orx3EkUJ8J.gif)
+![birthday_image](https://media.giphy.com/media/bnhAsd06orx3EkUJ8J/giphy.gif)
 
 이 블로그는 Code-Y-Learner의 It 일상다반사를 기록하는 공간입니다.
 
