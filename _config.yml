@@ -70,11 +70,13 @@ yat:
 # Google analytics
 # google_analytics: [Tracking ID]
 
+
+
 # If you want to generate website sitemap, you can set true
 # sitemap: false
 
 # If you want to change site language, you can set lang option
-# lang: "en"  # default lang is en
+lang: "ko"  # default lang is en
 
 # Translate languges
 # langs refer to https://cloud.google.com/translate/docs/languages
@@ -187,7 +189,18 @@ yat:
 # Disqus comments
 # disqus:
 #   shortname: "Your Disqus username"
-
+comments:
+  provider:            giscus
+giscus:
+  repo:                "Code-Y-Learner/Code-Y-Learner.github.io"
+  repo-id:             "R_kgDOIIhcdg"
+  category:            "Comments"
+  category-id:         "DIC_kwDOIIhcds4CR2Ns"
+  mapping:             "pathname"
+  reaction-enabled:    "1"
+  theme:               "preferred_color_scheme"
+  crossorigin:         "anonymous"
+  follow_site_theme:    true
 # Gitment comments
 # gitment:
 #   username: "Your GitHub username"
