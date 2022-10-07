@@ -42,7 +42,7 @@ locale: "ko-KR"
 #   "Copyright (c) 2017-{currentYear} <a href="https://example.com">{author}</a>"
 #   "Copyright © 2017-2021 Foobar"
 #
-copyright: "Unpublished Work (cleft) {currentYear} {author}"
+copyright: "(cleft) {currentYear} {author}"
 
 description: >- # this means to ignore newlines until "baseurl:"
   Personal blog that posts IT informations and hobbies
