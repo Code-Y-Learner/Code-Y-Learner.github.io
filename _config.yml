@@ -189,8 +189,7 @@ lang: "ko"  # default lang is en
 # Disqus comments
 # disqus:
 #   shortname: "Your Disqus username"
-comments:
-  provider:            giscus
+
 giscus:
   repo:                "Code-Y-Learner/Code-Y-Learner.github.io"
   repo-id:             "R_kgDOIIhcdg"
