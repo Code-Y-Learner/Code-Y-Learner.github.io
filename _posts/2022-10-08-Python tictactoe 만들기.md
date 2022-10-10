@@ -55,13 +55,15 @@ while game_is_on:
     order_com = random.choice(number_list)
     var_list[order_com] = 'X'
     number_list.remove(order_com)
-    print(number_list)
     show_board()
     end_game()
   else: 
     print('error try again')
 ~~~
 정말 간단한 버전으로 tictactoe를 빠르게 만들었다.
+
+여기서 test 해볼 수 있다.[url_tictactoe](https://replit.com/@Yusuengjae/tictactoe#main.py)
+input이 1 3 이면 첫번째 행 3번째 열에 동그라미를 쳐준다. 
 
 이 파일을 git add main.py 해서 git commit -m "초기버전" 또는 git commit -m "tictactoe-initial-commit" 등등 내가 원하는 대로 일단 commit 할 수 있다.
 
@@ -79,5 +81,5 @@ while game_is_on:
 1. GUI로 만들기(3,4번 개선)
 2. 로직개선(1,2번 개선)
 
-의 순서로 버전을 업그레이드 하면서 git에 쌓아보자.
+의 순서로 버전을 업그레이드 하면서 git에 관리해보자.
 
