@@ -216,11 +216,17 @@ giscus:
 #   theme: "github-light"
 #   follow_site_theme: true
 
+# Conversion
+
+
+
 # Build settings
-# highlighter: none
+highlighter: rouge
 markdown: kramdown
 kmarkdown:
   input: GFM
+  auto_ids: true
+  syntax_highlighter: rouge
 
 plugins:
   - jekyll-feed
