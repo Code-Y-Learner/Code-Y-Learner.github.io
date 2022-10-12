@@ -196,7 +196,6 @@ giscus:
   mapping:             "pathname"
   reaction-enabled:    "1"
   theme:               "preferred_color_scheme"
-  crossorigin:         "anonymous"
   follow_site_theme:    true
 # Gitment comments
 # gitment:
