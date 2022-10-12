@@ -71,6 +71,7 @@ RSS는 다양한 사이트에 대한 개인화된 보기를 허용합니다.
 RSS는 XML로 작성됩니다.
 
 ```html
+
 ---
 layout: null
 ---
@@ -101,6 +102,7 @@ layout: null
     {% endfor %}
   </channel>
 </rss>
+
 ```
 
 feed.xml 파일을 생성후 코드를 붙여넣고 root 폴더에 넣은후 깃허브 페이지에 푸쉬하자
