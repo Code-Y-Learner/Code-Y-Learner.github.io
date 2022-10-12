@@ -17,7 +17,8 @@ Google과 같은 검색엔진은 이 파일을 읽고 사이트를 더 효율적
  사이트맵은 내가 사이트에서 중요하다고 생각하는 페이지와 파일을 Google에 알리고 중요한 관련 정보를 제공
 
 
-```liquid
+{% highlight liquid %}
+{% raw %}
 ---
 layout: null
 ---
@@ -47,8 +48,8 @@ layout: null
     </url>
   {% endfor %}
 </urlset>
-```
-
+{% endraw %}
+{% endhighlight %}
 
 먼저 sitemap.xml 파일을 생성 후 위 코드를 붙여넣고 여러분의 깃허브 블로그 폴더 root경로(보통 index.html이 있는 곳으로)에 넣어준다.
 
@@ -73,7 +74,8 @@ RSS는 다양한 사이트에 대한 개인화된 보기를 허용합니다.
 RSS는 XML로 작성됩니다.
 
 
-```liquid
+{% highlight liquid %}
+{% raw %}
 ---
 layout: null
 ---
@@ -104,7 +106,8 @@ layout: null
     {% endfor %}
   </channel>
 </rss>
-```
+{% endraw %}
+{% endhighlight %}
 
 
 feed.xml 파일을 생성후 코드를 붙여넣고 root 폴더에 넣은후 깃허브 페이지에 푸쉬하자
