@@ -16,7 +16,7 @@ jekyll기반의 깃허브 블로그를 구글에 등록하는 과정을 통해 �
 <li>Google과 같은 검색엔진은 이 파일을 읽고 사이트를 더 효율적으로 크롤링합니다.</li>
 <li> 사이트맵은 내가 사이트에서 중요하다고 생각하는 페이지와 파일을 Google에 알리고 중요한 관련 정보를 제공</li>
 
-~~~
+~~~text
 ---
 layout: null
 ---
@@ -65,7 +65,7 @@ layout: null
 <li>RSS는 다양한 사이트에 대한 개인화된 보기를 허용합니다.</li>
 <li>RSS는 XML로 작성됩니다.</li>
 
-~~~
+~~~text
 ---
 layout: null
 ---
@@ -109,7 +109,7 @@ feed.xml 파일을 생성후 코드를 붙여넣고 root 폴더에 넣은후 깃
 
 robots.txt 파일을 생성 후 아래코드를 붙여넣어줍니다. 똑같이 root 위치에 파일을 넣어줍니다.
 
-~~~
+~~~text
 User-agent: *
 Allow: /
 
@@ -119,7 +119,7 @@ Sitemap: https://code-y-learner.github.io/sitemap.xml
 아까 말했듯이 특정 사이트에서만 검색이 되게 하려면 허용할 검색엔진 명을 User-age에 넣어주면 된다.
 예를들어 구글, 네이버일 경우 아래와 같이 하시면 됩니다.
 
-~~~
+~~~text
 User-agent: Googlebot
 User-agent: NaverBot
 Allow: /
