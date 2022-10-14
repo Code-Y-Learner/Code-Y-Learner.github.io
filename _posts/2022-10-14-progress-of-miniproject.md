@@ -12,15 +12,15 @@ tags: flask web python GUI miniproject API
 ### flask 웹 개발
 웹의 기본적인 뼈대와 api 실험은 성공했다.
 
-![image_entire_web](../assets/images/2022-10-14-progress-of-miniproject/flask_자기개발웹%20예시.PNG)
+![image_entire_web](/assets/images/2022-10-14-progress-of-miniproject/flask_자기개발웹%20예시.PNG)
 
 bootstrap으로 만들어진 탬플릿 대시보드를  flask로 로그인 등록 페이지 등을 연결하였고
 아이디를 로그인하면
-![image_login](../assets/images/2022-10-14-progress-of-miniproject/로그인예제.PNG)
+![image_login](/assets/images/2022-10-14-progress-of-miniproject/로그인예제.PNG)
 
 다음과 같이 usercode가 생성되면
 
-![image_api](../assets/images/2022-10-14-progress-of-miniproject/get.PNG)
+![image_api](/assets/images/2022-10-14-progress-of-miniproject/get.PNG)
 
 api 서버로 request를 보내 성공적으로 데이터베이스에 포모도르 데이터와 연동하는데 성공하였다.
 
