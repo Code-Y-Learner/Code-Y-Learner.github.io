@@ -74,3 +74,5 @@ lambda에게 직접 인수를 넘겨줘야 한다. lambda : 뒤에서의 변수�
 b=button 또는 b=getattr(self,f"{button}") 이런식으로 직접 인수를 지정해주자
 
 exec()를 이용한 방법들도 많은데 이는 다음에 또 알아보자
+
+![good_image](https://media.giphy.com/media/tIeCLkB8geYtW/giphy.gif)
