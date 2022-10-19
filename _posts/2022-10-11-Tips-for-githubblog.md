@@ -3,6 +3,7 @@ layout: post
 title: 깃허브 블로그 관련 팁들
 subtitle: jekyll 기반 오류 사례들 포함
 categories: blog
+description: Tips for post or using github blog
 tags: jekyll blog github
 ---
 

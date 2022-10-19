@@ -4,6 +4,7 @@ title: 블로그개시
 subtitle: 첫번째 게시글
 categories: blog
 tags: blog flask
+description: First post in code-y-learner's blog
 ---
 
 ### 블로그 개시

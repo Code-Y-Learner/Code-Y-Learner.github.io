@@ -3,6 +3,7 @@ layout: post
 title: Tic Tac Toe 마무리
 subtitle: GUI로 tic tac toe
 categories: pyqt
+description: Python TicTacToe game with PyQt GUI-version
 tags: python GUI tictactoe pyqt
 ---
 

@@ -3,6 +3,7 @@ layout: post
 title: Python GUI 만들기
 subtitle: tkinter를 통해 타이머를 만들어보자
 categories: python
+description: Making Pomodoro timer in python using tkinter
 tags: python tkinter pomodoro miniproject
 ---
 

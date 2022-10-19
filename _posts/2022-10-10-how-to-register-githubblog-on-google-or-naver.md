@@ -3,6 +3,7 @@ layout: post
 title: 깃허브 블로그 검색엔진에 등록하기
 subtitle: 구글 및 네이버 등록
 categories: blog
+description: Setting SEO in github blog with sitemaps
 tags: jekyll blog github SEO
 ---
 

@@ -3,6 +3,7 @@ layout: post
 title: MiniProject 지금까지 과정
 subtitle: 대시보드 flask web GUI와 연동
 categories: flask
+description: Process of my miniproject
 tags: flask web python GUI miniproject API
 ---
 

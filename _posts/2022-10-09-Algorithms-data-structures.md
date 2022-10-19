@@ -3,6 +3,7 @@ layout: post
 title: 알고리즘 유형 분석 - 자료구조
 subtitle: 배열, 벡터, 연결리스트
 categories: coding-test
+description: algorithm Big-O notation for codingtest
 tags: python coding-test
 ---
 
