@@ -1,10 +1,10 @@
 ---
 layout: post
-title: AWS SAA 자격증 준비 및 과정
-subtitle: aws SAA 시험을 준비하는 과정 및 기록
-categories: aws, saa-certificate
-description: aws saa 자격증 준비과정 기록
-tags: aws, certificate
+title: 동적 데이터 vs 정적 데이터
+subtitle: 동적 데이터를 가져오기 위해서
+categories: python, crawling
+description: 셀레니움을 통한 웹 동적 데이터 크롤링
+tags: python, Crawling 
 ---
 
 # 정적 데이터 vs 동적 데이터
