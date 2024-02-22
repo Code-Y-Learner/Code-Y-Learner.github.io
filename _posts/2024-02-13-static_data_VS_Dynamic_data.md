@@ -2,7 +2,7 @@
 layout: post
 title: 동적 데이터 vs 정적 데이터
 subtitle: 동적 데이터를 가져오기 위해서
-categories: python, crawling
+categories: PYTHON
 description: 셀레니움을 통한 웹 동적 데이터 크롤링
 tags: python, Crawling 
 ---

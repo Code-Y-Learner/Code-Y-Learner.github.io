@@ -2,7 +2,7 @@
 layout: post
 title: Selenium을 통한 실전압축 크롤링
 subtitle: 자동 크롤링을 통해 원하는 데이터를 얻자
-categories: Crawling
+categories: PYTHON
 description: 셀레니움을 활용하여 잡플래닛의 데이터를 활용해보자
 tags: python selenium crawling
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: Python tictactoe 만들기
 subtitle: 빠르게 만들기
-categories: python
+categories: PYTHON
 description: Making tictactoe games in python
 tags: python tictactoe miniproject
 ---

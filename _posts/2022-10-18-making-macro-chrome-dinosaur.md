@@ -2,7 +2,7 @@
 layout: post
 title: 크롬 공룡 게임 매크로로 알아보는 매크로
 subtitle: pyautogui 와 pillow를 활용해보자
-categories: macro
+categories: MACRO
 description: Making Chrome dinosaur-game macro
 tags: pyautogui python macro pillow
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: Gersang 매크로 제작기 macro를 알아보자
 subtitle: 나만의 매크로 마우스 키보드를 장비없이 만들자
-categories: macro
+categories: MACRO
 description: 거상 매크로 제작하고 나만의 매크로 마우스와 키보드를 만들어보자
 tags: pyautogui python macro pillow Gersang
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: Python 변수 선언 총정리
 subtitle: 주로 for loop 에서 변수 선언
-categories: python
+categories: PYTHON
 description: Declare variables in python in variable situations 
 tags: python variable
 ---

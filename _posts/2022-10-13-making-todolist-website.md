@@ -2,7 +2,7 @@
 layout: post
 title: MiniProject 자기개발 웹 만들기
 subtitle: 대시보드 flask web GUI와 연동
-categories: flask
+categories: PYTHON
 description: Making my web site with RESTFUL API with GUI controller
 tags: flask web python GUI miniproject API
 ---

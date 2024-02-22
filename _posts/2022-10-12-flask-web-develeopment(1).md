@@ -2,7 +2,7 @@
 layout: post
 title: 플라스크 웹개발 프로젝트
 subtitle: 내가 만든 블로그 뜯어보기
-categories: flask
+categories: PYTHON
 description: Flask web development by my site
 tags: flask blog web
 ---

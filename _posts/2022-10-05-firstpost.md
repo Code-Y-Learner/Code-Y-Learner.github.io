@@ -2,7 +2,7 @@
 layout: post
 title: 블로그개시
 subtitle: 첫번째 게시글
-categories: blog
+categories: BLOG
 tags: blog flask
 description: First post in code-y-learner's blog
 ---

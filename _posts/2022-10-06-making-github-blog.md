@@ -3,7 +3,7 @@ layout: post
 title: github블로그를 만들어보자!
 subtitle: static 블로그 제작일지
 author: Jeffrey
-categories: jekyll
+categories: BLOG
 banner:
   video: https://vjs.zencdn.net/v/oceans.mp4
   loop: true
