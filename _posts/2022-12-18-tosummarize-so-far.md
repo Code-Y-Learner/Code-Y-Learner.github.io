@@ -2,7 +2,7 @@
 layout: post
 title: 오랜만의 포스팅 지금까지 요약
 subtitle: 취업준비에 뛰어들기 미니프로젝트 포트폴리오
-categories: PORTFOLIO
+categories: JOB
 description: 취업준비 현재진행형 공부와 병행
 tags: job portfolio
 ---

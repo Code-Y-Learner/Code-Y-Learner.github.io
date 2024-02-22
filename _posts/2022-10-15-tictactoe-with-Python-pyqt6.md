@@ -10,7 +10,7 @@ tags: python GUI tictactoe pyqt
 ## Pyqt6로 tictactoe를 만들어보자
 이 포스트는 [이전 글(tictactoe)](https://code-y-learner.github.io/python/2022/10/08/Python-tictactoe.html) 에서 이어집니다.
 
-이전에 tictactoe를 GUI로 만든다고 하였는데 진행하고 있는 [project](https://code-y-learner.github.io/flask/2022/10/13/making-todolist-website.html) 와 관련해서 GUI를 tkinter에서 Pyqt로 갈아타면서 공부하기 괜찮은 주제인거 같아서 만들어봤습니다.
+이전에 tictactoe를 GUI로 만든다고 하였는데 진행하고 있는 [project](https://code-y-learner.github.io/python/2022/10/13/making-todolist-website.html) 와 관련해서 GUI를 tkinter에서 Pyqt로 갈아타면서 공부하기 괜찮은 주제인거 같아서 만들어봤습니다.
 
 먼저 tkinter에서 pyqt로 갈아탄 이유는 tkinter는 너무 오래된 오픈소스라는 걸 알았고 이참에 하나 더 파이썬 GUI를 배워두는 편이 좋겠다고 생각해서이다.
 
