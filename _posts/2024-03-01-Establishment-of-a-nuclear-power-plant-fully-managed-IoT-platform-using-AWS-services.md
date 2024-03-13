@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Selenium 동적 데이터 실전 압축 크롤링
-subtitle: 동적 데이터를 가져오기 위해 selenium을 써보자
-categories: PYTHON
+title: aws 서비스를 활용한 완전관리형 iot 플랫폼 구축
+subtitle: aws iot를 통한 원자력 발전소 완전관리형 플랫폼을 구축해보자
+categories: AWS
 description: 셀레니움을 통한 웹 동적 데이터 크롤링
-tags: python crawling selenium
+tags: aws iot miniproject
 ---
 
-# Selenium으로 실제 데이터를 가져와보자
+# 원자력 발전소의 클라우드화의 필요성
 
- [이전 글(정적 데이터 vs 동적 데이터)](https://code-y-learner.github.io/python/2024/02/13/static_data_VS_Dynamic_data.html)에서 크롤링에서 동적데이터와 정적데이터가 다른 것을 알아보았고 이제는 실제로 코드를 보면서 동적 데이터가 어떻게 다른지 알아보자.
+ [네이버, 원자력과 인공지능의 콜라보 기대(기사)](https://www.kaeri.re.kr/board/view?menuId=MENU00326&linkId=11151)를 보면 알 수 있듯이 발전소 분야에서 데이터를 클라우드에 저장하고 이를 분석하는 기술도 클라우드에서 동시에 이루어지는 완전관리형 서비스를 구축이 점점 늘어나고 있다. 이는 원시 데이터를 클라우드와 이중화시켜 혹시라도 있을 사고와 데이터의 보관을 이중화해 고가용성을 대비하고 완전관리형 서비스를 통해 혹시라도 있을 사람의 실수로 인한 오작동을 미리 차단할 수 있기 때문입니다. 특히 공공기관들의 클라우드 마이그레이션에서 
 
 
 ## Jobplanet 데이터를 가져와보자

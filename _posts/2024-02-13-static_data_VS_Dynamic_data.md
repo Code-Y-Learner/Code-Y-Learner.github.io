@@ -4,7 +4,7 @@ title: 동적 데이터 vs 정적 데이터
 subtitle: 동적 데이터의 개념과 가져오는 방법
 categories: PYTHON
 description: 셀레니움을 통한 웹 동적 데이터 크롤링
-tags: python, crawling 
+tags: python crawling 
 ---
 
 # 정적 데이터 vs 동적 데이터

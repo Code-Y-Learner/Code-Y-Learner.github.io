@@ -4,7 +4,7 @@ title: AWS SAA 자격증 준비 및 과정
 subtitle: aws SAA 시험을 준비하는 과정 및 기록
 categories: AWS
 description: aws saa 자격증 준비과정 기록
-tags: aws, certificate
+tags: aws certificate
 ---
 
 ### **AWS SAA 시험과정 준비과정 및 팁**
