@@ -190,9 +190,9 @@ lang: "ko"  # default lang is en
 
 giscus:
   repo:                "Code-Y-Learner/Code-Y-Learner.github.io"
-  repo-id:             "R_kgDOIIhcdg"
+  repo-id:             "R_kgDOLizOkA"
   category:            "Comments"
-  category-id:         "DIC_kwDOIIhcds4CR2Ns"
+  category-id:         "DIC_kwDOLizOkM4CeP_d"
   mapping:             "pathname"
   reaction-enabled:    "1"
   theme:               "preferred_color_scheme"
