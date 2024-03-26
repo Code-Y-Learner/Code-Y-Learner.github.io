@@ -34,24 +34,11 @@ tags: aws iot miniproject
 
  * AWSIoTPythonSDK.MQTTLib 라이브러리를 사용해 MQTT 연결은 다음과 같습니다.
 
-![Untitled](/assets/images/2024-03-01/nuclear.png)
+```python
+
+```
 
 실제 발전소의 데이터와 iot 센서들을 가져올 수 없기 때문에 저희는 가상의 환경을 만들고 직접 iot 센서들을 구축할 것입니다. iot 센서들은 다음과 같이 각기 다른 pipe 정보와 터빈 발전기 제어봉 데이터를 전송하게 되고 이에 관한 데이터는 발전요구량을 토대로 긴밀하게 연관되어 있는 데이터를 구성해 보내게 될 것입니다.
-
-정리하자면
->발전요구량 : MWh
->
->발전량 : MWh
->
->제어봉 높이 : m
->
->파이프 : MPa(압력), °C(온도) / (총 7개의 종류 위치가 다름)
->
->터빈 : rpm(회전속도)
->
->날씨 : °C(온도), %(습도), mm(강수량), m/s(풍속) 
-
-이런식으로 구성된다. 이러한 총 17개의 각기 다른 센서 데이터를 aws iot core로 전송하게 된다.
 
 >[다음포스트](https://code-y-learner.github.io/python/2024/02/13/static_data_VS_Dynamic_data.html)에서 더 정확한 구현방법과 연결 방법을 설명하겠습니다.
 

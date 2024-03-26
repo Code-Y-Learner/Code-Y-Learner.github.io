@@ -37,7 +37,7 @@ tags: aws iot miniproject
 
 이런식으로 구성된다. 이러한 총 17개의 각기 다른 센서 데이터를 aws iot core로 전송하게 된다.
 
->[다음포스트](https://code-y-learner.github.io/python/2024/02/13/static_data_VS_Dynamic_data.html)에서 더 정확한 구현방법과 연결 방법을 설명하겠습니다.
+>[다음포스트](https://code-y-learner.github.io/aws/2024/03/03/Establishment-of-a-nuclear-power-plant-fully-managed-IoT-platform-using-AWS-services(2).html)에서 더 정확한 구현방법과 연결 방법을 설명하겠습니다.
 
 ## 데이터 스트림 RAW DATA 저장
 iot core에서 모인 모든 센서 데이터들은 data kinesis를 통해 전달되고 firehose에서 aws glue 데이터 스키마 테이블을 통해 s3에 전달되게 됩니다.

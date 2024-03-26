@@ -1,18 +1,26 @@
 ---
 layout: post
-title: aws 서비스를 활용한 완전관리형 iot 플랫폼 구축(3)
-subtitle: aws iot core 가상 센서 환경 구축 및 웹 관리 콘솔
+title: S3, Aurora 사이의 데이터 교환 
+subtitle: s3 데이터를 데이터베이스에서 활용하자
 categories: AWS
-description: Establishment of a nuclear power plant fully managed IoT platform using AWS services
-tags: aws iot miniproject
+description: S3와 AWS Aurora MySQL 간 데이터 주고받기 (업로드 & 다운로드) Data exchange between S3 and Aurora
+tags: aws s3 aurora
 ---
 
-# 센서 환경구축
+# S3와 AWS Aurora MySQL 간 데이터 주고받기
 
-## 1. 센서 데이터를 만들 가상환경 구축
+## S3의 데이터를 Aurora DB에서 활용하자.
 
- 발전소의 센서데이터를 aws-iot-core로 보내면서 각 센서들은 독립적이면서도 보내는 데이터는 서로 긴밀히 연결되며 이것들을 한번에 관리할 수 있는 웹 관리 콘솔까지 구축을 해야합니다.
-  
+S3는 aws 스토리지 서비스 중 하나이면서 aws 서비스 전체 중에서도 가장 많이 쓰는 서비스 중 하나로 단순한 저장소로도 쓸 수 있지만 다른 aws 서비스와 연결되어 확장성이 가장 중요한 특징입니다. 예를 들어 웹 프론트 파일을 업로드하여 정적 웹 호스팅에 쓰여지거나 그 자체로 DB처럼 쓰이거나 각종 미디어 파일 변환등의 저장소로 활용되기도 합니다.
+
+일전에 [상권분석_프로젝트](ttps://code-y-learner.github.io/python/2024/02/13/static_data_VS_Dynamic_data.html)에서 상권 공공데이터를 통해 관계형 DB를 설계한 적이 있었는데 python-mysql를 활용하여 auroraDB 엔드포인트에 연결하여 직접 csv파일을 임포트하여 하나하나 넣어준 적이 있습니다.
+
+```python
+
+```
+
+ 하지만 데이터가 5년치 분량이 되가면서 행의 개수가 140만개 컬럼의 55개가 되면서 많은 데이터를 직접 쓸려고 하니 데이터 서버에 많은 쓰기 부하와 비용도 발생하였습니다.
+
 >발전요구량 : MWh<br>
 >발전량 : MWh<br>
 >제어봉 높이 : m<br> / (총 7개 종류 위치가 다름)
