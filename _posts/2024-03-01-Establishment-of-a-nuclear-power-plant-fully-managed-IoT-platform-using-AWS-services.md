@@ -3,7 +3,7 @@ layout: post
 title: aws 서비스를 활용한 완전관리형 iot 플랫폼 구축
 subtitle: aws iot를 통한 원자력 발전소 완전관리형 플랫폼을 구축해보자
 categories: AWS
-description: Establishment of a nuclear power plant fully managed IoT platform using AWS services
+description: AWS 서비스를 활용한 원전 완전관리형 IoT 플랫폼 구축 (Establishment of a nuclear power plant fully managed IoT platform using AWS services)
 tags: aws iot miniproject
 ---
 
@@ -44,7 +44,7 @@ iot core에서 모인 모든 센서 데이터들은 data kinesis를 통해 전�
 ![kinesis](/assets/images/2024-03-01/kinesis.png) 
 이러한 과정을 쉽게 설명하자면 kinesis는 통로 firehose는 s3에 직접 데이터를 보내는 과정 그리고 데이터의 스키마 정의는 데이터의 모양새를 정의해주고 데이터를 모아 5분에 한번 raw data 상태로 s3에 보관하게 됩니다.
 
->[다음포스트](https://code-y-learner.github.io/python/2024/02/13/static_data_VS_Dynamic_data.html)에서 더 정확한 구현방법과 상세 기능을 설명하겠습니다.
+>[다음포스트](https://code-y-learner.github.io/aws/2024/03/03/Establishment-of-a-nuclear-power-plant-fully-managed-IoT-platform-using-AWS-services(2).html)에서 더 정확한 구현방법과 상세 기능을 설명하겠습니다.
 
 ## 데이터 전처리 및 가공
 raw data를 저장하는 s3 버킷에서 이제 데이터를 가공해 관리자 및 사용자들이 모니터링할 사이트까지 연결해야 합니다.
@@ -60,4 +60,4 @@ aws cloudwatch를 통해 데이터를 시각화합니다. 이를 사용자 및 �
 
 ![architecture](/assets/images/2024-03-01/arch1.png)
 
-> 첫번째 구상한 아키텍쳐입니다. 실제로 구상한 아키텍쳐는 좀더 다양한 기능을 추가하였습니다. [다음포스트](https://code-y-learner.github.io/python/2024/02/13/static_data_VS_Dynamic_data.html)에서 확인할 수 있습니다.
+> 첫번째 구상한 아키텍쳐입니다. 실제로 구상한 아키텍쳐는 좀더 다양한 기능을 추가하였습니다. [실제 구축 과정](https://code-y-learner.github.io/aws_iotproject/) 웹에서 발표 ppt를 확인할 수 있습니다.
