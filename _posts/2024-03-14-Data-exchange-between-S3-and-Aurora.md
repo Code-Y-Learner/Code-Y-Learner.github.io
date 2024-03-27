@@ -156,4 +156,4 @@ if __name__ == '__main__':
 >
 >2번 방법은 100만행의 자료삽입도 몇초이내에 가능 
 
-[다음포스트](https://code-y-learner.github.io/python/2024/02/13/static_data_VS_Dynamic_data.html)에서 이러한 S3의 데이터 마이그레이션 방법을 모든 시행착오와 함께 알려드리겠습니다.
+[다음포스트](https://code-y-learner.github.io/aws/2024/03/17/Data-exchange-between-S3-and-Aurora(2).html)에서 이러한 S3의 데이터 마이그레이션 방법을 모든 시행착오와 함께 알려드리겠습니다.

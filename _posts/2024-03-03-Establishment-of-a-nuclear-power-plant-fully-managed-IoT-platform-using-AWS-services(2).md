@@ -308,3 +308,5 @@ if __name__ == '__main__':
 Master VM은 일반적으론 전기요구량의 하루치 변화량을 통해 값을 구성하여 각각의 Worker VM에 0.1초마다 신호를 줍니다. 파이프3의 신호가 끊기는 상황, 직접적으로 웹관리콘솔에서 토대가 되는 전기요구량을 컨트롤하는 패널 그리고 마지막으로 비상상황이 되면 원전의 비상상황을 모델링하여 비상신호를 Worker VM에 보내 시뮬레이션 상황을 만들도록 구축하였습니다.
 
 [실제 구축 과정](https://code-y-learner.github.io/aws_iotproject/) 웹에서 발표 ppt를 확인할 수 있습니다.
+
+[다음포스트](https://code-y-learner.github.io/aws/2024/03/03/Establishment-of-a-nuclear-power-plant-fully-managed-IoT-platform-using-AWS-services(2).html)에서 이어집니다.

@@ -61,3 +61,5 @@ aws cloudwatch를 통해 데이터를 시각화합니다. 이를 사용자 및 �
 ![architecture](/assets/images/2024-03-01/arch1.png)
 
 > 첫번째 구상한 아키텍쳐입니다. 실제로 구상한 아키텍쳐는 좀더 다양한 기능을 추가하였습니다. [실제 구축 과정](https://code-y-learner.github.io/aws_iotproject/) 웹에서 발표 ppt를 확인할 수 있습니다.
+
+[다음포스트](https://code-y-learner.github.io/aws/2024/03/03/Establishment-of-a-nuclear-power-plant-fully-managed-IoT-platform-using-AWS-services(2).html)에서 이어집니다.
