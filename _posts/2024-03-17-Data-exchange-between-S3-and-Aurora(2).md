@@ -54,3 +54,8 @@ LOAD DATA FROM S3 's3://dbbucket/customerdata.csv'
 ```
 
 이 과정까지 시행착오가 좀 있었는데 일단 공식 홈페이지의 [메뉴얼](https://docs.aws.amazon.com/ko_kr/AmazonRDS/latest/AuroraUserGuide/AuroraMySQL.Integrating.LoadFromS3.html)이 좀 불친절했고 rds를 재부팅안하면 파라미터 그룹이 적용이 안되는 등 다양한 트러블을 만났고 이러한 일이 없게 다들 쉽게 s3에서 rds로 데이터를 이관하여 쉽고 빠른 데이터를 사용가능해지길 바라는 마음과 기록을 위해 작성하였습니다.
+
+> 1. 파라미터 그룹 변경이 되었는지 확인 <br>
+>   -> rds 재부팅 필요
+> 2. s3와 rds가 같은 리전에 있는지 확인 <br>
+>   -> s3의 엔드포인트가 필요한지 확인
