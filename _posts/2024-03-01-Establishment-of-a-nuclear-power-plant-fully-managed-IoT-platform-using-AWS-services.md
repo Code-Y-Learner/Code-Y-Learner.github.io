@@ -1,9 +1,9 @@
 ---
 layout: post
-title: aws 서비스를 활용한 완전관리형 iot 플랫폼 구축
+title: aws 서비스를 활용한 관리형 iot 플랫폼 구축
 subtitle: aws iot를 통한 원자력 발전소 완전관리형 플랫폼을 구축해보자
 categories: AWS
-description: AWS 서비스를 활용한 원전 완전관리형 IoT 플랫폼 구축 (Establishment of a nuclear power plant fully managed IoT platform using AWS services)
+description: AWS 서비스를 활용한 원전 관리형 IoT 플랫폼 구축 (Establishment of a nuclear power plant fully managed IoT platform using AWS services)
 tags: aws iot miniproject
 ---
 
