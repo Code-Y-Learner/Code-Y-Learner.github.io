@@ -1,178 +1,49 @@
 ---
 layout: post
-title: 과제전형 문제들 나머지들 나의 답변들
-subtitle: 기업이 주는 과제를 AWS 환경에서 실제로 설계해보자
-categories: AWS
-description: 실제 과제전형에서 받았던 질문을 바탕으로 아키텍쳐를 설계하고 도식화 해보자 2편(Let's design and diagram the architecture based on questions received in actual corporate assignments 2)
-tags: Interview AWS
+title: 인프라 엔지니어 실무교육 (1)
+subtitle: 백업 & 아카이브 그 종류와 차이
+categories: Infra
+description: 백업과 아카이브 차이와 특징(Differences and features between backup and archiving)
+tags: Archaving Infra
 ---
 
-### 기업 과제
+### 인프라 엔지니어 교육 1
 
 
-#### 2. Quiz 2 AWS에서 운용되는 솔루션의 비용 절감을 위한 활동과 방법에 대해서 자유롭게 기술해주십시오.
+#### 백업
+백업 (backup)은 임시 보관을 일컫는 말로, 정보 기술에서는 데이터 백업(data backup)이라고 하며, 데이터를 미리 임시로 복제하여, 문제가 일어나도 데이터를 복구할 수 있도록 준비해 두는 것을 말한다. 데이터 백업을 수행한 파일은 백업 파일이라고 한다.
 
-제가 자주 비용절감을 위해 이용한 방법은 컨테이너를 통한 Fargate MSA 설계입니다. 컨테이너를 이용하면 스케일 아웃 스케일 인이 게스트 OS의 부팅시간을 기다려야 하는 EC2 등 보다 더 빨라 가변적인 수요량에 대처가 빠르고 MSA 설계를 통해 가용성 있는 환경을 제공할 때 시간과금과 인스턴스당 가격을 부과하는 EC2보다 사용량에 따른 과금을 부과하는 Fargate등이 가용성도
-높고 비용 절감에 도움이 되었습니다.
-또한 스트리밍 사이트를 설계할때는 리전별 가격정책이 다른 것을 확인하여 비교적 빠르면서 가격을 낮추기 위해 도쿄리전을 활용하기도하고 DB를 구성할 때 NoSQL로 해결가능한 부분은 DynamoDB와 람다로 구성해 비용을 많이 아낄 수 있는 부분이 많았습니다. 특히 프로젝트에서
-람다를 적극 활용하여 비용을 아낄 수 있는 부분이 많았습니다.
+#### 아카이브
+데이터의 세대 관리를 목적으로 하는 데이터 저장 기법으로, 데이터 보전에 초점을 두기 때문에 아카이브 데이터의 경우 데이터 갱신(update)에 대해 고려하지 않는다. 예를 들어 전자 문서와 같이 데이터의 보관 자체에 중점을 두는 것이다.
 
-가용성과 보안적인 요구사항을 만족하면서 비용효율적 아키텍쳐를 설계한 경험과 함께 실제로 비용이 발생하면 예상과 다른 부분에서 더 많은 요금이 부과될 수 있는데 이를 어떻게 해결하였는지 등의 경험을 말하면 좋은 거 같습니다. RDS의 속도를 보조하기 위해 redis를 사용할때 생각보다 많은 비용이 발생해서 redis 서버의 인스턴스 유형 등을 변경하거나 RDS를 DynamoDB와 같은 비관계형 서비스를 함께 사용해 속도를 보조하는 방법 등이 있을 거 같습니다.
+아카이브 파일은 보관 목적을 위해 소스 볼륨, 미디어 정보, 파일 디렉터리 구조, 복구 정보 및 메타 데이터가 포함된 파일들을 하나의 파일 형태로 변환한 것으로, 이 아카이브 파일을 생성하는 공정을 아카이버(archiver) 또는 파일 아카이버(file archiver)라고 부른다.
 
-#### Quiz 3 시스템 모니터링 경험에 대해 기술해주십시오. 어떤 도구 (툴, 서비스, 등)를 어떤 목적으로 어떻게 사용했는지 기술해주십시오.
+또한 아카이브 파일에서 원본 파일을 추출하는 것을 추출(extract)이라 부른다. 일반적으로 아카이브 파일을 생성함과 동시에 파일을 압축하는 경우가 많으며 .zip과 같이 자동으로 수행되는 방식도 많다.
 
-원전의 센서값을 통한 관리형 서비스를 AWS IotCore를 통해 구축할 때의 경험입니다. 센서의 값을 모니터링하고 센서의 값에 따라 관리자에게 SNS를 통해 알림을 주는 등 모니터링을 설계하였습니다. 관리자는 Iot SiteWise를 통해 실시간 센서값을 목적에 맞게 모니터링하고 CloudWatch를 통해 정해진 센서값에 대한 이상 감지시 SNS를 통해 알림을 주도록 설계하였습니다. 또한 온프레
-미스 환경에서는 AWS Iot Core로 원전의 센서값을 보내는 가상의 VM 17개를 설계하였는데 마스터 VM에서 나머지 VM들이 보내는 센서값을 조절하는 웹관리콘솔페이지를 만들면서 나머지 VM들의 상태 cpu사용량, net 사용량 등을 모니터링 할 수 있는 오픈소스 netdata를 사용하여 모니터링을 한 적이 있습니다.
+| **구분**                | **백업(Backup)**                                | **아카이브(Archive)**                           |
+|-------------------------|------------------------------------------------|------------------------------------------------|
+| **정의**                | 데이터 손실 시 복구를 위해 데이터를 복제하여 저장 | 중요하거나 오래된 데이터를 장기 보관            |
+| **목적**                | 데이터 복구 및 보호                              | 데이터 보존 및 규제 준수                         |
+| **데이터 성격**         | 주기적으로 변경되는 운영 데이터                   | 주로 변경되지 않는 정적 데이터                  |
+| **저장 위치**           | 운영 시스템과 가까운 위치 (온프레미스, 클라우드 등) | 저렴한 저장소 (오프라인 테이프, 클라우드 장기 저장소 등) |
+| **접근 빈도**           | 빈번하거나 즉각적인 액세스 요구                   | 낮은 빈도 또는 법적 요구 시에만 접근             |
+| **보관 기간**           | 단기 또는 중기                                   | 장기 (법적 또는 규제 요구 사항에 따라 다름)     |
+| **데이터 복구 속도**     | 빠른 복구 가능                                   | 복구가 느리거나 복잡할 수 있음                  |
+| **중복 데이터 관리**     | 중복 데이터를 허용 (최신 상태 유지)                | 중복 없이 단일 복사본만 저장                     |
+| **규제**             | 컴플라이언스 의 규제에 부적당  | 보관주기 검색, 가용성,데이터의 보호 등 컴플라이언스에 적절  |
+| **사용 예**             | 시스템 고장 시 복구, 랜섬웨어 공격 후 복원          | 규제 준수를 위한 금융 기록 보관, 법적 보존       |
 
-APM(Application Performance Monitoring)은 기본적으로 Cloud Watch를 사용할 수 있습니다. AWS 인스턴스들에 대한 것들이라면 Cloud Watch로 볼 수 있지만 대시보드를 구성하고 Cloud Watch의 반응성을 빠르게 할려면 비용이 부과될 수 있습니다. 사용하는 서비스에 따라 Cloud Watch 외에도 모니터링을 실시간 하거나 대시보드를 만드는 IOT Sitewise 같은 서비스등도 많고 직접 구축할 수도 있습니다.
 
-#### Quiz 4 ALB, EC2, RDS 리소스를 테라폼 코드를 통해 형상관리하고자 합니다. 각 서비스를 테라폼 Terraform 코드로 구현해 주세요. 필수 조건 ALB : rule 80, 443 EC2 : Amazon Linux2, SSH 통신을 이용한 터미널 접속이 가능해야 합니다. RDS : MariaDB, EC2 가 인바운드 통신 가능해야 합니다.
+<br><br><br><br>
 
-```python
-##########
-# 서울리전
-##########
-provider "aws" {
-region = "ap-northeast-2"
-}
-###########
-#AWS key pair EC2 만들때 AWS 로그인
-###########
-resource "aws_key_pair" "deployer" {
-key_name = "ec2-deployer-key"
-public_key = # file("~/.ssh/id_rsa.pub") or "ssh-rsa
-AAAAB3NzaC1yc2EAAAADAQABAAABAQD3F6tyPEFEzV0LX3X8BsXdMsQz1x2cEikKDEY0aIj41qgxMCP/iteneqXSIFZBp5vizPvaoI
-R3Um9xK7PGoW8giupGn+EPuxIA4cDM4vzOqOkiMPhz5XK0whEjkVzTo4+S0puvDZuwIsdiW9mxhJc7tgBNL0cYlWSYVkz4G/fslNfR
-PW5mYAM49f4fhtxPb5ok4Q2Lg9dPKVHO/Bgeu5woMc7RY0p1ej6D4CKFE6lymSDJpW0YHX/wqE9+cfEauh7xZcG0q9t2ta6F6fmX0a
-gvpFyZo8aFbXeUBr7osSCJNgvavWbM/06niWrOvYX2xwWdhXmXSrbX8ZbabVohBK41 email@example.com"
-}
-############
-#Security group(ssh 연결)
-############
-resource "aws_security_group" "allow_ssh" {
-name =
-"allow_ssh"
-description = "Allow SSH inbound traffic"
-ingress {
-from_port = 22
-to_port = 22
-protocol = "tcp"
-cidr_blocks = ["0.0.0.0/0"]
-}
-egress {
-from_port = 0
-to_port = 0
-protocol =
-"
--1"
-cidr_blocks = ["0.0.0.0/0"]
-}
-}
-#Security group(web)
-resource "aws_security_group" "allow_web" {
-name = "allow_web"
-description = "Allow Web inbound traffic"
-vpc_id = aws_vpc.main.id
-ingress {
-from_port = 80
-to_port = 80
-protocol = "tcp"
-cidr_blocks = ["0.0.0.0/0"]
-}
-ingress {
-from_port = 443
-to_port = 443
-protocol = "tcp"
-cidr_blocks = ["0.0.0.0/0"]
-}
-egress {
-from_port = 0
-to_port = 0
-protocol =
-"
--1"
-cidr_blocks = ["0.0.0.0/0"]
-}
-}
-#Security group(db)
-resource "aws_security_group" "allow_db" {
-name = "allow_db"
-description = "Allow DB inbound traffic"
-vpc_id = aws_vpc.main.id
-ingress {
-from_port = 3306
-to_port = 3306
-protocol = "tcp"
-cidr_blocks = [aws_instance.chatserver.private_ip]
-}
-egress {
-from_port = 0
-to_port = 0
-protocol =
-"
--1"
-cidr_blocks = ["0.0.0.0/0"]
-}
-}
-#############
-# EC2
-#############
-resource "aws_instance" "web" {
-ami = "ami-0fd54cba47d6e98dc"
-instance_type = "t3.micro"
-key_name = aws_key_pair.deployer.key_name
-security_groups = [aws_security_group.allow_ssh.name]
-tags = {
-Name = "ChatServer"
-}
-}
-##############
-# ALB
-##############
-resource "aws_lb" "lb_chatserver" {
-name = "load-balancer-chatserver"
-internal = false
-load_balancer_type = "application"
-security_groups = [aws_security_group.allow_web.id]
-subnets = [aws_subnet.public1.id, aws_subnet.public2.id]
-enable_deletion_protection = false
-}
-##############
-# ALB http, https 리스너
-##############
-resource "aws_lb_listener" "http" {
-load_balancer_arn = aws_lb.lb_chatserver.arn
-port = "80"
-protocol = "HTTP"
-default_action {
-type = "forward"
-target_group_arn = aws_lb_target_group.chatserver.arn
-}
-}
-resource "aws_lb_listener" "https" {
-load_balancer_arn = aws_lb.lb_chatserver.arn
-port = "443"
-protocol = "HTTPS"
-default_action {
-type = "forward"
-target_group_arn = aws_lb_target_group.chatserver.arn
-}
-}
-##############
-# RDS maria_db
-##############
-resource "aws_db_instance" "chatdb" {
-allocated_storage = 400
-storage_type = "gp3"
-engine = "mariadb"
-engine_version = "10.11.6"
-instance_class = "db.t3.micro"
-name = "chatdb"
-username = "admin"
-password = "password"
-parameter_group_name = "default.mariadb10.11.6"
-vpc_security_group_ids = [aws_security_group.allow_web.id]
-tags = {
-Name =
-"ChatDBInstance"
-```
+#### 데이터 아카이빙의 필요성
+![DATA1](/assets/images/2024-09-30/Data.png)
+백업의 중요성은 아무리 강조해도 지나치지 않다. 문제는 증가하는 데이터의 양이다. 커져가는 데이터는 주기억장치의 성능저하와 비용 증가의 문제를 동시에 초래하며 그 양과 비례해 백업데이터의 양도 많아지게 된다.
+
+문제는 이러한 데이터의 대부분은 생성된 후 다시 쓰이지 않는다는 것이다. 이러한 문제점을 해결하기 위해 등장하는 게 아카이브이다.
+
+데이터 보관 규정을 만족하면서 주기억장치의 부하와 비용을 개선하고 백업데이터의 양을 줄여 백업윈도우(백업소요시간)을 줄여주는 목표를 수행한다.
+
+여기까지만 보면 보관할 데이터를 정해서 보관하는게 백업과 크게 다른 점이 크게 와닿지는 않는다. 하지만 데이터 보관 규정과 이를 위한 아카이브 하드웨어를 보면 아 그래서 이런 방법을 수행하는구나 쉽게 알 수 있다.
+
+다음에는 똑같이 데이터를 저장하는 백업과 달리 아카이브는 어떤 방식을 수행하면 비용의 절감 및 데이터 보관 규정에 더 적합할 수 있는지
