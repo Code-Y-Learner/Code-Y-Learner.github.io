@@ -1,9 +1,9 @@
 ---
 layout: post
-title: 인프라 엔지니어 실무교육 (1)
-subtitle: 백업 & 아카이브 그 종류와 차이
+title: 인프라 엔지니어 실무교육 (2)
+subtitle: LTO(Linear Tape Open)으로 알아보는 아카이빙 기술
 categories: Infra
-description: 백업과 아카이브 차이와 특징(Differences and features between backup and archiving)
+description: LTO(Linear Tape Open)으로 알아보는 아카이빙 기술(Archiving technology learned through LTO (Linear Tape Open))
 tags: Archaving Infra
 ---
 
