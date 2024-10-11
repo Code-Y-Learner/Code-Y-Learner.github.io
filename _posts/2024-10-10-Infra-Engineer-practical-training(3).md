@@ -2,7 +2,7 @@
 layout: post
 title: 인프라 엔지니어 실무교육 (3)
 subtitle: 클라우드 컴퓨팅 아키텍쳐 분석
-categories: Infra
+categories: Cloud
 description: 클라우드 컴퓨팅 아키텍쳐 분석(Cloud computing architecture analysis)
 tags: Cloud Infra
 ---
