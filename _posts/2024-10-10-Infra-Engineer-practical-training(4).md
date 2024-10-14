@@ -7,7 +7,7 @@ description: 클라우드 컴퓨팅 아키텍쳐 분석(Cloud computing architec
 tags: Cloud Infra
 ---
 
-### 인프라 엔지니어 교육 3
+### 인프라 엔지니어 교육 4
 
 #### 클라우드 컴퓨팅 서비스 모델 분석: IaaS, PaaS, SaaS 비교
 
